@@ -9,7 +9,7 @@ body
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right,#BFE4F8,#FFE0FF);
+    background: linear-gradient(to bottom right,#CAD2D4,#CAD2D4);
 }
 .head
 {
@@ -28,51 +28,12 @@ body
 {
     position: relative;
 }
-.moon1
-{
-    height: 95px;
-    width: 95px;
-    border-radius: 50%;
-    background:  linear-gradient(#FF1446,#6F00B5);
-    animation: animate1 5s cubic-bezier(0.33, 0, 0.66, 1) infinite;
-}
-@keyframes animate1
-{
-    0%
-    {
-        transform: translateX(0);
-    }
-    100%
-    {
-        transform: translateX(495px);
-    }
-}
-.moon2
-{
-    z-index: 1;
-    height: 95px;
-    width: 95px;
-    border-radius: 50%;
-    background:  linear-gradient(#FF1446,#6F00B5);
-    animation: animate2 5s cubic-bezier(0.33, 0, 0.66, 1) infinite;
-}
-@keyframes animate2
-{
-    100%
-    {
-        transform: translateX(-495px);
-    }
-    0%
-    {
-        transform: translateX(0);
-    }
-}
 .sun
 {
-    height: 400px;
-    width: 400px;
+    height: 315px;
+    width: 315px;
     border-radius: 50%;
-    background: url(../img/icon.png);
+    background:  linear-gradient(#FFA701,#FF0000);
 }
 .selector
 {
@@ -83,25 +44,28 @@ body
 }
 .sel1
 {
-    margin-top: -490px;
+    font-size: 0.9em;
+    margin-top: -550px;
+    margin-left: 850px;
     width: 255px;
     height: 22px;
     border-radius: 25px;
-    box-shadow: inset -5px -7px 10px #a3b1c7,
-                inset 5px 25px 15px #E7EDFE,
-                10px 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 5px 7px 10px #AFB1B0,
+                inset -5px -7px 15px #AFB1B0,
+                -5px -15px 15px rgba(255, 255, 255, 0.75),                
+                 5px 5px 25px rgba(0, 0, 0, 0.5);
 }
 .log
 {
     position: absolute;
-    left: -3px;
-    bottom: -1px;
+    left: 5px;
+    bottom: 0px;
 }
 .sig
 {
     position: absolute;
-    left: 133px;
-    bottom: -1px;
+    left: 138px;
+    bottom: 0px;
 
 }
 li
@@ -111,7 +75,7 @@ li
 a
 {
     text-decoration: none;
-    color: #41237C;
+    color: #7D7F7F;
     width: 50px;
     height: 50px;
     margin: 15px;
@@ -121,7 +85,8 @@ a
     width: 760px;
     height: 40px;
     border-radius: 40px;
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: -8px -10px 15px rgba(255, 255, 255, 0.75),               
+                8px 10px 8px rgba(0, 0, 0, 0.25);
 }
 .apps
 {
@@ -145,8 +110,8 @@ a
 input
 {
     position: relative;
-    background: transparent;	
-    color: #41237C;
+    background: transparent;
+    color: #7D7F7F;
     border: none;
     width: 590px;
     height: 30px;
@@ -156,12 +121,12 @@ input
 }
 input::placeholder 
 {
-    color: #41237C;
+    color: #7D7F7F;
 }
 .dropbtn 
 {
     background-color: transparent;
-    color: #41237C;
+    color: #7D7F7F;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -183,7 +148,7 @@ input::placeholder
 }  
 .dropdown-content a 
 {
-    color: #41237C;
+    color: #7D7F7F;
     text-decoration: none;
     display: block;
 }  
